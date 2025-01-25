@@ -136,25 +136,17 @@ Interrupts are maskable and nonmaskable. Interrupts are handled asynchronously w
 
 ## Instructions
 
-| Opcode | Operation |
-|--------|-----------|
-| 0000   | HALT      |
-| 0001   | MOV       |
-| 0010   | Load      |
-| 0011   | Store     |
-| 0100   | Load Imm. |
-| 0101   | JMP       |
-| 0110   | JC        |
-| 0111   | JZ        |
-| 1000   | ALU       |
-| 1001   | SHIFT(x)  |
-| 1010   | POP       |
-| 1011   | PUSH      |
-| 1100   | CALL      |
-| 1101   | RET       |
-| 1110   |           |
-| 1111   |           |
-----------------------
+| Opcode | Operation |    | Opcode | Operation |
+|--------|-----------|    |--------|-----------|
+| 0000   | HALT      |    | 0111   | JZ        |
+| 0001   | MOV       |    | 1000   | ALU       |
+| 0010   | Load      |    | 1001   | SHIFT(x)  |
+| 0011   | Store     |    | 1010   | POP       |
+| 0100   | Load Imm. |    | 1011   | PUSH      |    
+| 0101   | JMP       |    | 1100   | CALL      |
+| 0110   | JC        |    | 1101   | RET       |
+----------------------    ----------------------
+
 
 For detailed implementation, see the Multisim project files.
 ```
