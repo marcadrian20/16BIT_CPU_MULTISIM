@@ -1,5 +1,4 @@
 
-```markdown
 # 16-Bit CPU Architecture
 
 ## Overview
