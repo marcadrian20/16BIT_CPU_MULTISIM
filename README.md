@@ -138,7 +138,7 @@ Interrupts are maskable and nonmaskable. Interrupts are handled asynchronously w
 
 
 | Opcode | Operation |    | Opcode | Operation |
-|--------|-----------|    |--------|-----------|
+|--------|-----------|----|--------|-----------|
 | 0000   | HALT      |    | 0111   | JZ        |
 | 0001   | MOV       |    | 1000   | ALU       |
 | 0010   | Load      |    | 1001   | SHIFT(x)  |
