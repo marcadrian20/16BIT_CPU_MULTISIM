@@ -134,22 +134,27 @@ The CPU has the following ports:
 
 Interrupts are maskable and nonmaskable. Interrupts are handled asynchronously when they occur during non-memory load/store/stack operations.
 
-## Example Instructions
+## Instructions
 
-| Opcode | Operation | Example Instruction   |
-|--------|-----------|-----------------------|
-| 0000   | HALT      | `[0000|x____x]`        |
-| 0010   | Load      | `[0010|ADDR]`          |
-| 0100   | Load Imm. | `[0100|VALUE]`         |
-| 0011   | Store     | `[0011|ADDR]`          |
-| 1000   | ADD       | `[1000|SRC|DST|xx|0000]` |
-| 0101   | JMP       | `[0101|ADDR]`          |
-| 1010   | POP       | `[1010|REG|xxxxxx]`    |
-| 1011   | PUSH      | `[1011|REG|xxxxxx]`    |
-| 1100   | CALL      | `[1100|ADDR]`          |
-| 1101   | RET       | `[1101|xxxx]`          |
-
----
+| Opcode | Operation |
+|--------|-----------|
+| 0000   | HALT      |
+| 0001   | MOV       |
+| 0010   | Load      |
+| 0011   | Store     |
+| 0100   | Load Imm. |
+| 0101   | JMP       |
+| 0110   | JC        |
+| 0111   | JZ        |
+| 1000   | ALU       |
+| 1001   | SHIFT(x)  |
+| 1010   | POP       |
+| 1011   | PUSH      |
+| 1100   | CALL      |
+| 1101   | RET       |
+| 1110   |           |
+| 1111   |           |
+----------------------
 
 For detailed implementation, see the Multisim project files.
 ```
