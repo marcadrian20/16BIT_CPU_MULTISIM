@@ -150,4 +150,3 @@ Interrupts are maskable and nonmaskable. Interrupts are handled asynchronously w
 ---
 
 For detailed implementation, see the Multisim project files.
-```
